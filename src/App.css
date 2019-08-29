@@ -1,0 +1,29 @@
+/* html,
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+} */
+
+.container {
+  background-color: #cb0042;
+  padding: 2em;
+  width: 25%;
+  min-height: 80vh;
+}
+
+.logo {
+    height: 1.8em;
+    width: auto;
+    margin-bottom: 1em;
+}
+
+.display {
+    background-color: #36454f;
+    padding: 1em;
+    color: white;
+    text-align: right;
+    text-indent: 10px;
+    border-radius: 25px;
+}
