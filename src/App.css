@@ -6,24 +6,45 @@ body {
   flex-shrink: 0;
 } */
 
-.container {
+.app {
   background-color: #cb0042;
   padding: 2em;
   width: 25%;
   min-height: 80vh;
+  border-radius: 5px;
 }
 
 .logo {
-    height: 1.8em;
-    width: auto;
-    margin-bottom: 1em;
+  height: 1.8em;
+  width: auto;
+  margin-bottom: 1em;
 }
 
 .display {
-    background-color: #36454f;
-    padding: 1em;
-    color: white;
-    text-align: right;
-    text-indent: 10px;
-    border-radius: 25px;
+  background-color: #36454f;
+  padding: 1em;
+  color: white;
+  text-align: right;
+  text-indent: 10px;
+  border-radius: 25px;
+}
+
+.buttons-container {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.left-container {
+  display: flex;
+
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
 }
