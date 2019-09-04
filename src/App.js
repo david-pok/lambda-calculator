@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers.js";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators.js";
@@ -16,6 +16,7 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
+  const [displayData, setDD] = useState(0);
 
   return (
     <div className="app">
@@ -23,7 +24,7 @@ function App() {
         <Logo />
       </div>
       <div className="display">
-        <Display />
+        <Display displayData={displayData} />
       </div>
       <div className="buttons-container">
         <div className="left-container">
@@ -31,7 +32,7 @@ function App() {
             <Specials />
           </div>
           <div className="left-bottom">
-            <Numbers />
+            <Numbers setDD={setDD} displayData={displayData} />
           </div>
         </div>
         <div className="right-container">
