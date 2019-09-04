@@ -27,8 +27,12 @@ function App() {
       </div>
       <div className="buttons-container">
         <div className="left-container">
-          <Specials />
-          <Numbers />
+          <div className="left-top">
+            <Specials />
+          </div>
+          <div className="left-bottom">
+            <Numbers />
+          </div>
         </div>
         <div className="right-container">
           <Operators />

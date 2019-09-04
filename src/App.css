@@ -8,9 +8,9 @@ body {
 
 .app {
   background-color: #cb0042;
-  padding: 2em;
-  width: 25%;
-  min-height: 80vh;
+  padding: 1.5em;
+  width: 350px;
+  min-height: 75vh;
   border-radius: 5px;
 }
 
@@ -30,21 +30,36 @@ body {
 }
 
 .buttons-container {
+  padding-top: 20px;
+  height: 60vh;
   display: flex;
   /* justify-content: space-around; */
 }
 
 .left-container {
-  display: flex;
-
+  /* display: flex; */
+  width: 66%;
+  /* flex-direction: column; */
 }
 
 .right-container {
   display: flex;
   flex-direction: column;
+  width: 33%;
+}
+
+.left-bottom {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
 }
