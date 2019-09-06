@@ -1,8 +1,11 @@
 import React from "react";
 
-const SpecialButton = (props) => {
+const SpecialButton = props => {
   return (
-    <button className="buttons">
+    <button
+      className="buttons"
+      onClick={() => props.setDD(props.dd + props.special)}
+    >
       {props.special}
     </button>
   );

@@ -1,8 +1,11 @@
 import React from "react";
 
-const OperatorButton = (props) => {
+const OperatorButton = props => {
   return (
-    <button className="buttons">
+    <button
+      className="buttons"
+      onClick={() => props.setDD(props.dd + props.operator)}
+    >
       {props.operator}
     </button>
   );

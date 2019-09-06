@@ -16,7 +16,7 @@ function App() {
   // Your functions should accept a parameter of the the item data being displayed to the DOM (ie - should recieve 5 if the user clicks on
   // the "5" button, or the operator if they click one of those buttons) and then call your setter function to update state.
   // Don't forget to pass the functions (and any additional data needed) to the components as props
-  const [displayData, setDD] = useState(0);
+  const [displayData, setDD] = useState("");
 
   return (
     <div className="app">
@@ -29,14 +29,14 @@ function App() {
       <div className="buttons-container">
         <div className="left-container">
           <div className="left-top">
-            <Specials />
+            <Specials setDD={setDD} displayData={displayData} />
           </div>
           <div className="left-bottom">
             <Numbers setDD={setDD} displayData={displayData} />
           </div>
         </div>
         <div className="right-container">
-          <Operators />
+          <Operators setDD={setDD} displayData={displayData} />
         </div>
       </div>
     </div>
